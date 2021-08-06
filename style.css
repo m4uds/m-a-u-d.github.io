@@ -48,6 +48,7 @@ button{
 
 
 #button_about {
+    z-index: 3;
     float:right;
     right:20px;
     
@@ -58,4 +59,17 @@ button{
     right:20px;
     bottom:20px;
     
+}
+
+#cart-cont:hover{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    width: 50vw;
+    min-height: 100vh;
+    bottom: 5px;
+    right: 5px;
+    overflow-y: scroll;
+    border-left: dashed;
+
 }
