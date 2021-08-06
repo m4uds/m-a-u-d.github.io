@@ -1,9 +1,1 @@
-WEB
-
-
-
-
-
-
-
-SITE
+WEBSITE
