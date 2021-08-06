@@ -18,21 +18,7 @@ a {
     cursor:crosshair;
 }
 
-#button {
-    font-family: Helvetica;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    width:100vw;
-    text-rendering: geometricPrecision;
-}
-
-#button1 {
+button{
     font-size: 11px;
     font-family: Helvetica;
     position:fixed;
@@ -41,49 +27,35 @@ a {
     border-radius: 15px;
     padding:5px;
     width:50px;
-    left:20px;
     cursor:pointer;
 }
+#button_home {
+    left:20px;
+   }
+   
+   #button_work{
+    
+    left:20px;
+    
+}
 
-#button2 {
-    font-size: 11px;
-    font-family: Helvetica;
-    position:fixed;
-    background-color: white;
-    border: 0.3px black solid;
-    border-radius: 15px;
-    padding:5px;
-    width:50px;
+#button_store {
     float:right;
     right:90px;
-    cursor:pointer;
+    
 }
 
-#button3 {
-    font-size: 11px;
-    font-family: Helvetica;
-    position:fixed;
-    background-color: white;
-    border: 0.3px black solid;
-    border-radius: 15px;
-    padding:5px;
-    width:50px;
+
+
+#button_about {
     float:right;
     right:20px;
-    cursor:pointer;
+    
 }
 
-#button4 {
-    font-size: 11px;
-    font-family: Helvetica;
-    position:fixed;
-    background-color: white;
-    border: 0.3px black solid;
-    border-radius: 15px;
-    padding:5px;
-    width:50px;
+#button_cart {
     float:right;
     right:20px;
     bottom:20px;
-    cursor:pointer;
+    
 }
