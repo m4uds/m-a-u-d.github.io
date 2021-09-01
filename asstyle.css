@@ -1,0 +1,36 @@
+
+.ascii-art {
+    margin: 50px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 5px;
+    line-height: 6px;
+    font-stretch: condensed;
+    text-shadow: 0 0 5px rgba(100,100,100,0.5);
+    white-space: pre;
+    cursor: pointer;
+    
+   }
+
+  #flex-cont{
+      display: flex;
+      flex-wrap: wrap;
+      
+  }
+.for-your{
+    color: red;
+    display: block;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size: 50px;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+.print-cont{
+   width: 80%;
+   height: 90%;
+
+}
