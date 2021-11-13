@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+		
+		
+		function newSmiles(){
+		
+		var x = Math.floor((Math.random() * 100) + 0);
+		var y = Math.floor((Math.random() * 100) + 0);
+		
+		var newSmile = document.createElement("div");
+		
+		newSmile.innerHTML = "<p> =) </p>"
+		newSmile.className = "smile";
+		
+		newSmile.style.top = y+"%";
+		newSmile.style.left = x+"%";
+		
+		
+		
+		
+		document.getElementById("smile-cont").appendChild(newSmile);
+		
+	}
+		
+		function cheekySmiles(){
+			
+			var i = 0
+			while (i < 200){
+				i = i +1
+				newSmiles()
+				
+				
+			}
+			
+		}
+
+	
+	
+    </script>
+
+</head>
+
+<body>
+
+    <div id = "smile-cont"> </div>
+
+    <h1>maud.cv</h1>
+
+    <div id = cv-cont class = "menu"> 
+    <a class = "menu-item" href= 'https://github.com/m-a-u-d/'> https://github.com/m-a-u-d/ </a>
+    
+    <h3> 
+        tech.
+    </h3>
+   
+    <p class = "menu-item"> 2020- now Griit Studio, co-founder / co-creative direction / designer / technician </p>
+        <p class = "menu-item" > 2019-2022 RMIT, BA (photography)</p>
+        2017-2019 Palace Cinemas (Barracks), Audio Visual Tech’ <br>
+        2018-2019 Freelance, audio visual tech’ <br>
+        2018-2019 Freelance, first assistant camera
+
+
+    </p>
+
+    <h3> 
+        foh.
+    </h3>
+   
+    <p> 
+        2019- now Cinema Nova, cinema attendant <br>
+        2013-2019 Palace Cinemas (Barracks), FOH 
+
+
+    </p>
+
+    <h3> 
+        art.
+    </h3>
+   
+    <p> 
+        <a href="maud.work/portfolio.html">portfolio</a> <br>
+        2020- now Collider, artist collective, co-founder, contributer
+
+
+    </p>
+
+    </div>
+
+
+</body>
+
+
+
+<script>
+    	window.addEventListener("click", function (){
+			
+			newSmiles()
+		})
+		
+</script>
+
+</html>
+

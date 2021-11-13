@@ -1,0 +1,131 @@
+
+body{
+    background-color: #3f7a4e;
+    width: 100vw;
+    height: 100vh;
+    font-family: times;
+    font-style: bold;
+    letter-spacing:-.25ch;
+    
+
+}
+h1{font-size: x-large;
+    transition-duration: 2s;}
+
+h1:hover{
+    font-size: xx-large;
+}
+
+#menu-cont{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    
+     
+}
+
+.menu-header{
+    letter-spacing:-.2ch;
+    font-size: x-large;
+   
+}
+
+.menu{
+    letter-spacing: -.1ch;
+    min-width: 125px;
+    transition-duration: 7s;
+    cursor: pointer;
+}
+.menu-item{
+    transition-duration:0s;
+    font-style: normal;
+    font-weight: 300;
+}
+.menu-item:hover{
+    font-size: large;
+    font-style: bold;
+    font-weight: 700;
+
+}
+
+#content-cont{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    width: 60vw;
+    letter-spacing:-.2ch;
+    font-size: medium;
+    
+}
+
+#cont{
+    display: flex;
+    flex-direction: row;
+}
+#cont p {
+    letter-spacing: -.1ch;
+    max-width: 400px;
+    text-align: justify;
+    
+}
+#cont img{
+    max-width: 100px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 2px darkgreen;
+    transition-duration: 5s;
+}
+#cont img:hover{max-width: 20vw;
+                width: 250px;
+                box-shadow: 5px 5px 5px darkgreen;}
+
+
+#very-lovely-food{
+    display: none;
+}
+#missing-persons{
+    display: none;
+}
+
+#copy-for-your-information{
+    display: none;
+}
+
+#platypus-publication{
+    display: none;
+}
+
+#collider-work{
+    display: none;
+}
+#collider-web{
+    display: none;
+}
+#plat-iframe{
+    min-width: 300px;
+    width: 40vw;
+    min-height: 300px;
+    height: 40vh;
+}
+
+
+
+#cv-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+#smile-cont{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+#smile-cont div{
+
+
+position: absolute;
+}
