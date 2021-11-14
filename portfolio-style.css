@@ -102,6 +102,16 @@ h1:hover{
 #collider-web{
     display: none;
 }
+
+#neg-value{
+    display: none;
+}
+#tech-prints{
+    display: none;
+}
+#unres{
+    display: none;
+}
 #plat-iframe{
     min-width: 300px;
     width: 40vw;
