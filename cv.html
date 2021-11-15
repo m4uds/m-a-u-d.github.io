@@ -8,10 +8,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
-		
+		smileMultiplyer = 0
 		
 		function newSmiles(){
-		
+        i = 0;
+        numNewSmile = (smileMultiplyer + 1) * 0.75;
+        while(i < numNewSmile){
+        
+            
+        
 		var x = Math.floor((Math.random() * 100) + 0);
 		var y = Math.floor((Math.random() * 100) + 0);
 		
@@ -25,14 +30,21 @@
 		
 		
 		
+       
+        
+        
+        document.getElementById("smile-cont").appendChild(newSmile);
+        i = i+1;
+        
+        }
 		
-		document.getElementById("smile-cont").appendChild(newSmile);
+        smileMultiplyer = smileMultiplyer +1;
 		
 	}
 		
 		function cheekySmiles(){
 			
-			var i = 0
+			
 			while (i < 200){
 				i = i +1
 				newSmiles()
@@ -55,17 +67,30 @@
     <h1>maud.cv</h1>
 
     <div id = cv-cont class = "menu"> 
-    <a class = "menu-item" href= 'https://github.com/m-a-u-d/'> https://github.com/m-a-u-d/ </a>
     
+    <h3> 
+        art.
+    </h3>
+   
+    <p> 
+        <a class = "menu-item" href="/portfolio.html"> portfolio</a> 
+        <p class = "menu-item"> 2020- now Collider, artist collective, co-founder, contributer</p> 
+
+
+    </p>
+
+
+
     <h3> 
         tech.
     </h3>
-   
+    <a class = "menu-item" href= 'https://github.com/m-a-u-d/'> https://github.com/m-a-u-d/ </a>
+    
     <p class = "menu-item"> 2020- now Griit Studio, co-founder / co-creative direction / designer / technician </p>
-        <p class = "menu-item" > 2019-2022 RMIT, BA (photography)</p>
-        2017-2019 Palace Cinemas (Barracks), Audio Visual Tech’ <br>
-        2018-2019 Freelance, audio visual tech’ <br>
-        2018-2019 Freelance, first assistant camera
+    <p class = "menu-item" > 2019-2022 RMIT, BA (photography)</p>
+    <p class = "menu-item"> 2017-2019 Palace Cinemas (Barracks), Audio Visual Tech’ </p>
+    <p class = "menu-item">   2018-2019 Freelance, audio visual tech’ </p>
+    <p class = "menu-item">2018-2019 Freelance, first assistant camera</p>
 
 
     </p>
@@ -74,24 +99,38 @@
         foh.
     </h3>
    
-    <p> 
-        2019- now Cinema Nova, cinema attendant <br>
-        2013-2019 Palace Cinemas (Barracks), FOH 
+    <p class = "menu-item"> 2019- now Cinema Nova, cinema attendant </p>
+       <p class = "menu-item">2013-2019 Palace Cinemas (Barracks), FOH 
+
+
+    </p>
+
+
+    <h3> 
+        selected hard-skills
+    </h3>
+   
+    <p class = "menu-item"> python: pandas, numpy, matplotlib, bs4</p>
+    <p class = "menu-item"> html, css </p>
+    <p class = "menu-item"> javascript: vanila </p>
+    <p class = "menu-item"> java </p>
+    <p class = "menu-item"> </p>
+    <p class = "menu-item"> full adobe suite </p>
+    <p class = "menu-item"> basic hardware and fault finding </p>
+
 
 
     </p>
 
     <h3> 
-        art.
+        selected soft-skills
     </h3>
-   
-    <p> 
-        <a href="maud.work/portfolio.html">portfolio</a> <br>
-        2020- now Collider, artist collective, co-founder, contributer
+    <p class = "menu-item"> creative / visual problemsolver</p>
+    <p class = "menu-item"> v. efficient learner</p>
+    <p class = "menu-item"> a little bit cheeky</p>
 
 
-    </p>
-
+    
     </div>
 
 
