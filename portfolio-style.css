@@ -147,3 +147,11 @@ position: absolute;
 #cv-cont h3{
     margin-top: 5px;
 }
+
+#water-melon{
+    opacity: 0;
+    transition-duration: 5s;
+    mix-blend-mode: screen;
+    border-radius: 1vw;
+    max-width: 20vw;
+}

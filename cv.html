@@ -127,7 +127,9 @@
     </h3>
     <p class = "menu-item"> creative / visual problemsolver</p>
     <p class = "menu-item"> v. efficient learner</p>
-    <p class = "menu-item"> a little bit cheeky</p>
+    <p onmouseover="displayWaterM()" onmouseleave="hideWaterM()" class = "menu-item"> a little bit cheeky</p>
+
+    <img id = "water-melon" src = "portfolio-img/thin_watermelon.gif">
 
 
     
@@ -136,7 +138,15 @@
 
 </body>
 
+<script> 
+    function displayWaterM(){
+        document.getElementById('water-melon').style.opacity = "1";
+    }
 
+    function hideWaterM(){
+        document.getElementById('water-melon').style.opacity= "0";
+    }
+</script>
 
 <script>
     	window.addEventListener("click", function (){
