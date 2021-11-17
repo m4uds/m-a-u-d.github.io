@@ -74,10 +74,10 @@ h1:hover{
     margin-right: 25px;
     margin-bottom: 25px;
     box-shadow: 2px 2px 2px darkgreen;
-    transition-duration: 5s;
+    transition-duration: 2s;
 }
-#cont img:hover{max-width: 20vw;
-                width: 250px;
+#cont img:hover{max-width: 40vw;
+                width: 300px;
                 box-shadow: 5px 5px 5px darkgreen;}
 
 
