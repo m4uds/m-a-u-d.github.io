@@ -6,7 +6,7 @@ body{
     font-family: times;
     font-style: bold;
     letter-spacing:-.25ch;
-    
+  
 
 }
 h1{font-size: x-large;
@@ -76,9 +76,26 @@ h1:hover{
     box-shadow: 2px 2px 2px darkgreen;
     transition-duration: 2s;
 }
-#cont img:hover{max-width: 40vw;
-                width: 300px;
-                box-shadow: 5px 5px 5px darkgreen;}
+#hide-print{
+    display: none;
+    position: absolute;
+}
+
+#print-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+   
+}
+
+#print-content img{
+ margin-top: 30px;  
+ max-width: 800px;
+ max-height: 800px;
+}
+
 
 
 #very-lovely-food{
