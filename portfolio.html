@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type ="text/javascript" src="printThis.js"></script>
+   
+    <script type ="text/javascript" src="print.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="cowboy.png">
 
 </head>
 <body>
@@ -373,26 +375,20 @@ function display(id){
     
 }
 
+const imagePrint = [];
+
 function print(object){
-    //var cont = document.createElement("DIV");
-    //cont.className = "print-cont";
+    
+    imagePrint.reverse().push(object.src);
+    object.remove();
+    printJS({
+    printable: imagePrint.reverse(),
+    type: 'image',
+    imageStyle: 'width:95%;margin-bottom:20px;'
+    })
 
-    cont = document.getElementById("print-content")
-
-    var infomation = document.createElement("H1");
-        infomation.className = "for-your";
-        infomation.innerHTML = ""
-        cont.appendChild(infomation)
-
-    var x = object;
-    //cont.appendChild(x);
-
-    cont.insertBefore(x,cont.firstChild)
-
-    console.log(x);
-
-    $(cont).printThis();
 }
+
 
 
 </script>

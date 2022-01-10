@@ -1,14 +1,23 @@
 
 body{
     background-color: #3f7a4e;
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: 99vh;
     font-family: times;
     font-style: bold;
     letter-spacing:-.25ch;
-  
+    overflow: hidden;
 
 }
+
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+a:visited{
+    color: black;
+}
+
 h1{font-size: x-large;
     transition-duration: 2s;}
 
@@ -17,7 +26,7 @@ h1:hover{
 }
 
 #menu-cont{
-    display: flex;
+    display: none;
     flex-direction: column;
     max-width: 30%;
     
@@ -77,23 +86,22 @@ h1:hover{
     transition-duration: 2s;
 }
 #hide-print{
-    display: none;
+    display: block;
     position: absolute;
+    min-height: 300px;
+    
+    
 }
 
 #print-content{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   
-   
+   position: absolute;
 }
 
 #print-content img{
  margin-top: 30px;  
- max-width: 800px;
- max-height: 800px;
+ width: 90%;
+ max-height: 90%;
+ 
 }
 
 
@@ -171,4 +179,10 @@ position: absolute;
     mix-blend-mode: screen;
     border-radius: 1vw;
     max-width: 20vw;
+}
+
+#cowboy{
+    position: absolute;
+    transition-duration: 2s;
+    
 }

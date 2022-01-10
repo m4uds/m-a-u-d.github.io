@@ -4,39 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style copy.css">
-    <title>maud.</title>
+    <link rel="stylesheet" href="portfolio-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="cowboy.png">
+    <title>maud.work</title>
+    
 </head>
 <body>
 
     <header>
     </header>
-
-    <div id = "folder-cont-index">
-
-        <div class = "folder" onclick="click()">
-             <img src = "FolderIcon.png" >
-                        <h2>maud.</h2>
+    
+    <h1 onmousemove='moveCowboy()'>maud.work</h1>
+    
+    <div id = "cont">
+        <div id = "menu-cont"> 
+            <div class = "menu">
+                <div onmouseenter='moveCowboy()' class = 'menu-item'> <a href="https://maud.work/portfolio"> portfolio</a></div>
+                <div onmouseenter='moveCowboy()' class = 'menu-item' > <a href="mailto:maudfreeman@gmail.com"> contact </a> </div>
+            </div>
         </div>
-
-     
+    </div>
     
-    
-    
+    <div onmouseenter='moveCowboy()' id = "cowboy">
+        <img src="cowboy.png">
     </div>
 
 
 
 </body>
-
 <script>
-function click(){
-navigator.vibrate(200); // vibrate for 200ms
-navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]); // Vibrate 'SOS' in Morse.
-window.location.href = "home.html";
 
+let firstMove = true;
 
+function randomNumber(min, max){
+    return Math.floor(Math.random() * max) + min;
+    }
+
+function moveCowboy(){
+    
+    cowboy = document.getElementById("cowboy");
+    
+    if (firstMove == true){
+        document.getElementById("menu-cont").style.display = "flex";
+        firstMove = false;
+        
+        cowboy.style.top = cowboy.getBoundingClientRect().top+"px";
+        cowboy.style.left = cowboy.getBoundingClientRect().left+"px";
+
+    }
+    
+    cowboy.style.top = randomNumber(5,$(window).width()/2)+"px";
+    cowboy.style.left = randomNumber(5,$(window).height()/2)+"px";
+    
+
+    
+    
 }
+
 
 </script>
 
