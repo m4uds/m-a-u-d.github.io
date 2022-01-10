@@ -26,10 +26,45 @@
         </div>
     </div>
     
-    <div onmouseenter='moveCowboy()' id = "cowboy">
+    <div>
+    <div onmouseenter='moveCowboy()'  id = "cowboy">
         <img src="cowboy.png">
     </div>
 
+    
+    <div onmouseenter='moo()' id = "cow_001" class = "cows">
+        <img src="moo_001.png">
+    </div>
+
+    <div onmouseenter='moo()' id = "cow_002" class = "cows">
+        <img src="moo_002.png">
+    </div>
+
+    <div onmouseenter='moo()' id = "cow_003" class = "cows">
+        <img src="moo_003.png">
+    </div>
+
+    <div onmouseenter='moo()' id = "cow_004" class = "cows">
+        <img src="moo_004.png">
+    </div>
+
+    <div onmouseenter='moo()' id = "cow_005" class = "cows">
+        <img src="moo_001.png">
+    </div>
+
+    <div onmouseenter='moo()' id = "cow_006" class = "cows">
+        <img src="moo_002.png">
+    </div>
+    <div onmouseenter='moo()' id = "cow_007" class = "cows">
+        <img src="moo_002.png">
+    </div>
+    <div onmouseenter='moo()' id = "cow_008" class = "cows">
+        <img src="moo_001.png">
+    </div>
+    <div onmouseenter='moo()' id = "cow_009" class = "cows">
+        <img src="moo_003.png">
+    </div>
+    </div>
 
 
 </body>
@@ -53,15 +88,69 @@ function moveCowboy(){
         cowboy.style.left = cowboy.getBoundingClientRect().left+"px";
 
     }
+    x = randomNumber(5,$(window).width()/2)
+    y = randomNumber(5,$(window).height()/2)
+    cowboy.style.top = x+"px";
+    cowboy.style.left = y+"px";
     
-    cowboy.style.top = randomNumber(5,$(window).width()/2)+"px";
-    cowboy.style.left = randomNumber(5,$(window).height()/2)+"px";
+    console.log("cowboy x ")
+    console.log(x)
+    console.log("--> cows")
     
+    moveCows(x,y);
+    
+}
 
+
+
+function moo(){
+    //randomly select moo sound to play on mouse over
+    console.log("moo")
+    x = randomNumber(5,$(window).width()/2);
+    y = randomNumber(5,$(window).height()/2);
+    moveCows(x,y);
+}
+
+
+
+let cowsId = ["cow_001", "cow_002" , "cow_003" , "cow_004" , "cow_005", "cow_005", "cow_006", "cow_007", "cow_008", "cow_009"]
+
+function moveCows(targetX, targetY){
+
+    shuffleArray(cowsId);
+
+    
+    
+    //console.log(x)
+    //console.log(y)
+
+    for (var i = 0; i < cowsId.length; i++) { 
+     
+    //select cow
+    cow = document.getElementById(cowsId[i]);
+
+    //set variable transistion-delay / cow walking speed
+    cow.style.transitionDuration = randomNumber(3,35)+"s";
+
+    //individual cow coordinate w. variablity
+    cowX = (randomNumber(1,40)* Math.round(Math.random()) * 2 - 1) + targetX;
+    cowY = (randomNumber(1,40)* Math.round(Math.random()) * 2 - 1) + targetY;
+    
+    cow.style.left = cowX+"px";
+    cow.style.top = cowY+"px";
+    
     
     
 }
 
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
 
 </script>
 

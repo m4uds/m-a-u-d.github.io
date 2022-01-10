@@ -184,5 +184,15 @@ position: absolute;
 #cowboy{
     position: absolute;
     transition-duration: 2s;
+    z-index: 10;
     
 }
+#cowboy img{width: 80px;}
+
+.cows{
+    position: absolute;
+    transition-duration: 2s;
+    z-index: 5;
+    top: -150px;
+}
+.cows img{width: 50px;}
