@@ -33,36 +33,36 @@
 
     
     <div onmouseenter='moo()' id = "cow_001" class = "cows">
-        <img src="moo_001.png">
+        <img src="images/moo_001.png">
     </div>
 
     <div onmouseenter='moo()' id = "cow_002" class = "cows">
-        <img src="moo_002.png">
+        <img src="images/moo_002.png">
     </div>
 
     <div onmouseenter='moo()' id = "cow_003" class = "cows">
-        <img src="moo_003.png">
+        <img src="images/moo_003.png">
     </div>
 
     <div onmouseenter='moo()' id = "cow_004" class = "cows">
-        <img src="moo_004.png">
+        <img src="images/moo_004.png">
     </div>
 
     <div onmouseenter='moo()' id = "cow_005" class = "cows">
-        <img src="moo_001.png">
+        <img src="images/moo_001.png">
     </div>
 
     <div onmouseenter='moo()' id = "cow_006" class = "cows">
-        <img src="moo_002.png">
+        <img src="images/moo_002.png">
     </div>
     <div onmouseenter='moo()' id = "cow_007" class = "cows">
-        <img src="moo_002.png">
+        <img src="images/moo_002.png">
     </div>
     <div onmouseenter='moo()' id = "cow_008" class = "cows">
-        <img src="moo_001.png">
+        <img src="images/moo_001.png">
     </div>
     <div onmouseenter='moo()' id = "cow_009" class = "cows">
-        <img src="moo_003.png">
+        <img src="images/moo_003.png">
     </div>
     </div>
 
@@ -80,23 +80,21 @@ function moveCowboy(){
     
     cowboy = document.getElementById("cowboy");
     
+    //first move def. current location as top + left prop. prevents non-animated postion jump
     if (firstMove == true){
         document.getElementById("menu-cont").style.display = "flex";
-        firstMove = false;
-        
         cowboy.style.top = cowboy.getBoundingClientRect().top+"px";
         cowboy.style.left = cowboy.getBoundingClientRect().left+"px";
+        firstMove = false;
 
     }
+    
+    //moves cowbow to random location 
     x = randomNumber(5,$(window).width()/2)
     y = randomNumber(5,$(window).height()/2)
     cowboy.style.top = x+"px";
     cowboy.style.left = y+"px";
-    
-    console.log("cowboy x ")
-    console.log(x)
-    console.log("--> cows")
-    
+    //moves cows to taget locaiton ie. cowboy
     moveCows(x,y);
     
 }
@@ -110,9 +108,8 @@ function moo(){
     y = randomNumber(5,$(window).height()/2);
     moveCows(x,y);
 }
-
-
-
+// array of cow Id's
+// allows for easy additon of new cows w. custom styling
 let cowsId = ["cow_001", "cow_002" , "cow_003" , "cow_004" , "cow_005", "cow_005", "cow_006", "cow_007", "cow_008", "cow_009"]
 
 function moveCows(targetX, targetY){
